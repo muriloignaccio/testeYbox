@@ -1,0 +1,48 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    margin: 0;
+}
+
+/* HEADER */
+
+header{
+    background-color: #68d388;
+    border-bottom: solid 1.5vh #e98826;
+}
+header hr{
+    border: solid 1px white;
+    width: 82vw;
+}
+header img{
+    margin: 5vh 10vw;
+}
+header p{
+    color: white;
+    margin: 0 5vw;
+    text-align: center;
+}
+header p:first-child{
+    font-size: 32pt;
+    font-weight: bolder;
+    margin: 12vh 5vw;
+}
+header p:last-child{
+    font-size: 16pt;
+    font-weight: 600;
+    margin: 12vh 10vw;
+    text-align: center;
+}
+header p:nth-child(3){
+    font-weight: bold;
+    font-size: 20pt;
+}
+header > div:last-child{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+header > div:last-child img{
+    width: 83vw;
+}
