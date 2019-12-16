@@ -208,7 +208,7 @@ main > div:nth-child(4) > div:nth-child(2){
     width: 75vw;
 }
 
-/* SECTION */
+/* SECTION 1 */
 
 section{
     align-items: center;
@@ -243,9 +243,13 @@ section p{
 section > div > div:nth-child(2) h1, section > div > div:nth-child(3) h1{
     color: #44f077;
 }
+
+/* SECTION 2 */
+
 section + section{
     align-items: center;
     background-color: white;
+    border-bottom: solid 1.5vh #44f077;
     display: flex;
     flex-direction: column;
 }
@@ -274,3 +278,12 @@ section + section > div > div ul{
 section + section > div > div li{
     margin: 5vh 0;
 }
+section + section > div > div:nth-child(3){
+    margin-top: 10vh;
+}
+section + section > div hr{
+    border: solid 1px #cecece;
+    width: 90vw;
+}
+
+/* FOOTER */
