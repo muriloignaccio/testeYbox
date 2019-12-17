@@ -55,6 +55,11 @@ main{
     flex-direction: column;
     align-items: center;
 }
+main > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 main div h1{
     color: #e98826;
     font-size: 24pt;
@@ -207,6 +212,36 @@ main > div:nth-child(4) > div:nth-child(2){
     margin: 0 10vw;
     width: 75vw;
 }
+main > div > div:nth-child(2) h1{
+    font-size: 20pt;
+    margin: 2vh 8vw;
+}
+main > div > div:nth-child(2) h2{
+    font-size: 12pt;
+    margin: 0 5vw;
+}
+main > div > div:nth-child(2) p{
+    color: #989898;
+    font-size: 14pt;
+    font-weight: 600;
+    margin: 5vh 10vw;
+}
+main > div:first-child > div:nth-child(2){
+    border: solid .5px #44f077;
+    border-radius: 10px;
+    width: 90vw;
+}
+main > div > div:nth-child(2) > div:first-child{
+    margin: 0;
+}
+form{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+form > div{
+    margin: 1vh 0;
+}
 form > div:first-child{
     align-items: center;
     color: #717174;
@@ -214,14 +249,32 @@ form > div:first-child{
     flex-direction: row;
     font-weight: 600;
     justify-content: space-evenly;
+    width: 83vw;
 }
-form > div:first-child input{
+form > div:nth-child(2){
+    align-items: center;
+    border: solid 1px #989898;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    width: 75vw;
+}
+form > div:first-child input[type="radio"]{
+    display: none;
+}
+form > div:nth-child(2) input[type="radio"]{
     display: none;
 }
 form > div:first-child label{
     align-items: center;
     display: flex;
+    flex-direction: row-reverse;
 }
+form > div:nth-child(2) label{
+    background-color: #f6f6f6;
+    border-radius: 10px;
+}
+
 form > div:first-child label:hover span{
     background-color: #cecece;
     transition: .2s linear;
@@ -233,7 +286,26 @@ form > div:first-child span{
     display: flex;
     justify-content: flex-end;
     height: 20px;
+    margin-right: 2vw;
     width: 20px;
+}
+
+form > div:nth-child(2) span{
+    align-items: center;
+    background-color: #f6f6f6;
+    color: #989898;
+    display: flex;
+    font-size: 10pt;
+    font-weight: 600;
+    height: 7vh;
+    text-align: center;
+    width: 100%;
+}
+form > div:nth-child(2) > label:first-child span{
+    border-radius: 10px 0 0 10px;
+}
+form > div:nth-child(2) > label:nth-child(2) span{
+    border-radius: 0 10px 10px 0;
 }
 form > div:first-child input:checked + span{
     border: solid 1px #44f077;
@@ -248,6 +320,54 @@ form > div:first-child span::before{
     display: none;
     height: 20px;
     width: 20px;
+}
+form > div:nth-child(3){
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+form > div:nth-child(3) input{
+    border: solid 1px #dedede;
+    border-radius: 5px;
+    height: 5vh;
+    margin: 1vh 0;
+    padding-left: 5vw;
+    width: 70vw;
+}
+form > div:nth-child(3) select{
+    border: solid 1px#dedede;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    color: gray;
+    height: 5vh;
+    font-weight: 600;
+    margin: 1vh 0;
+    -moz-appearance: none;
+    padding-left: 4vw;
+    width: 76vw;
+}
+form > div:nth-child(3) select::after{
+    content: "v";
+    height: 30px;
+    width: 30px;
+}
+input::-moz-placeholder{
+    margin-left: 1vw;
+    font-weight: 600;
+}
+form button{
+    background-color: #e9831e;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 10pt;
+    font-weight: 600;
+    height: 7vh;
+    margin: 1vh 0;
+    width: 75vw;
+}
+button > span{
+    font-weight: 800;
 }
 /* SECTION 1 */
 
