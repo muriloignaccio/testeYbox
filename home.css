@@ -469,3 +469,72 @@ footer p{
 footer span{
     color: #44f077;
 }
+
+/* TABLET */
+
+@media(min-width: 768px){
+
+    /* HEADER */
+
+    header p:first-child{
+        margin: 5vh 5vw;
+    }
+    header p:last-child{
+        margin: 10vh 10vw 0;
+    }
+
+    /* MAIN */
+
+    main hr{
+        width: 75vw;
+    }
+    main div h1{
+        font-size: 30pt;
+        margin: 5vh 10vw;
+    }
+    main div > div:first-child{
+        margin: 0;
+    }
+    main > div > div:first-child > div:nth-child(2n + 2){
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 4vh 0;
+        width: 80%;
+    }
+    main > div > div:first-child > div:nth-child(4n + 2) > div:last-child{
+        width: 50%;
+    }
+    main > div > div:first-child > div:nth-child(2n + 2) > div:last-child h1, main > div > div:first-child > div:nth-child(2n + 2) > div:last-child p{
+        margin: 0;
+        text-align: left;
+    }
+    main > div:first-child > div:nth-child(2){
+        width: 60vw;
+    }
+    main > div:first-child > div:nth-child(2){
+        margin-top: 5vh;
+    }
+    form > div:first-child{
+        width: 80%;
+    }
+    form > div:nth-child(2){
+        width: 75%;
+    }
+    form > div:nth-child(3) input{
+        width: 53%;
+    }
+    form > div:nth-child(2) span{
+        height: 5vh;
+    }
+    form > div:nth-child(3) select{
+        width: 60%;
+    }
+    form > div:nth-child(3){
+        width: 75vw;
+    }
+    form button{
+        height: 5vh;
+        width: 61%;
+    }
+}
