@@ -64,13 +64,14 @@ main div h1{
 main div > div:first-child{
     align-items: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-top: 10vh;
 }
 main div > div:nth-child(2) h1{
     font-size: 18pt;
 }
-main > div:nth-child(2) > h1{
+main > div:nth-child(2) h1{
     color: #44f077;
     font-size: 20pt;
     margin: 10vh 10vw 0;
@@ -97,9 +98,8 @@ main p{
     margin: 0 10vw 5vh;
     text-align: center;
 }
-main > div > div:nth-child(2) h1, main > div > div:nth-child(6) h1{
-    color
-    : #44f077;
+main > div > div > div:nth-child(2) h1, main > div > div > div:nth-child(6) h1{
+    color: #44f077;
 }
 main > div:nth-child(3){
     display: flex;
@@ -167,7 +167,7 @@ main > div:nth-child(4) > div:first-child{
     align-items: center;
     border: solid 2px #e7007d;
     border-radius: 10px;
-    margin: 10vh 10vw 5vh 10vw;
+    margin: 10vh 7vw 5vh 10vw;
 }
 main > div:nth-child(4) > div:first-child h1{
     background-color: white;
@@ -207,7 +207,48 @@ main > div:nth-child(4) > div:nth-child(2){
     margin: 0 10vw;
     width: 75vw;
 }
-
+form > div:first-child{
+    align-items: center;
+    color: #717174;
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    justify-content: space-evenly;
+}
+form > div:first-child input{
+    display: none;
+}
+form > div:first-child label{
+    align-items: center;
+    display: flex;
+}
+form > div:first-child label:hover span{
+    background-color: #cecece;
+    transition: .2s linear;
+}
+form > div:first-child span{
+    align-items: center;
+    border: solid 1px #989898;
+    border-radius: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: 20px;
+    width: 20px;
+}
+form > div:first-child input:checked + span{
+    border: solid 1px #44f077;
+}
+form > div:first-child input:checked + span::before{
+    display: flex;
+}
+form > div:first-child span::before{
+    background-color: #44f077;
+    border-radius: 100%;
+    content: "";
+    display: none;
+    height: 20px;
+    width: 20px;
+}
 /* SECTION 1 */
 
 section{
@@ -287,3 +328,24 @@ section + section > div hr{
 }
 
 /* FOOTER */
+
+footer{
+    background-color: #989898;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+footer > div:first-child{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 5vh 10vw 0 10vw;
+}
+footer p{
+    font-size: 8pt;
+    font-weight: 500;
+    margin: 5vh 10vw;
+}
+footer span{
+    color: #44f077;
+}
