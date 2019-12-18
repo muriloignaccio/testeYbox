@@ -8,7 +8,7 @@ body{
 /* HEADER */
 
 header{
-    background-color: #68d388;
+    background-color: #57ea80;
     border-bottom: solid 1.5vh #e98826;
 }
 header hr{
@@ -446,6 +446,9 @@ section + section > div hr{
     border: solid 1px #cecece;
     width: 90vw;
 }
+section > div > div:nth-child(3) > div:first-child > h1{
+    color: #44f077;
+}
 
 /* FOOTER */
 
@@ -475,6 +478,9 @@ footer span{
 @media(min-width: 768px){
 
     /* HEADER */
+    header{
+        border-bottom: solid .5vh #e9831e;
+    }
 
     header p:first-child{
         margin: 5vh 5vw;
@@ -485,8 +491,9 @@ footer span{
 
     /* MAIN */
 
-    main hr{
-        width: 75vw;
+    main > div:nth-child(n + 3) > div:first-child hr{
+        margin: 2vh 0;
+        width: 20%;
     }
     main div h1{
         font-size: 30pt;
@@ -536,5 +543,159 @@ footer span{
     form button{
         height: 5vh;
         width: 61%;
+    }
+    main h2{
+        font-size: 16pt;
+    }
+    main > div:nth-child(2) h1{
+        font-size: 24pt;
+    }
+    main > div:nth-child(2){
+        width: 90vw;
+    }
+    main > div:nth-child(3) > div:first-child h1{
+        margin: -1.5vh 5vw 3vh;
+        width: 32vw;
+    }
+    main > div:nth-child(4) > div:first-child h1{
+        margin: -1.5vh 5vw 3vh;
+        width: 35vw;
+    }
+    main > div:nth-child(n + 3) > div:first-child p:nth-child(3n+2){
+        width: 30vw;
+    }
+    main > div:nth-child(n + 3) > div:first-child p:nth-child(3n+3){
+        margin-left: 0;
+        margin-right: 0;
+        width: 51%;
+    }
+    main > div:nth-child(n+3) > div:nth-child(2){
+        width: 44vw;
+    }
+    main > div:nth-child(4) > div:nth-child(2){
+        margin-bottom: 3vh;
+    }
+
+    /* SECTION */
+
+    section{
+        border-bottom: solid .5vh #e7007d;
+    }
+    section > div:nth-child(2) > div{
+        align-items: center;
+        display: flex;
+        margin: 4vh 0;
+    }
+    section > div:nth-child(2) > div h1, section > div:nth-child(2) > div p{
+        margin: 0;
+        text-align: left;
+    }
+    body > section:nth-child(3) > div > div > div:first-child{
+        align-items: center;
+        margin-top: 0;
+        height: 94px;
+        width: 94px;
+    }
+    section > div:nth-child(2) > div > div:nth-child(2){
+        margin-left: 10vw;
+        width: 50vw;
+    }
+
+    /* SECTION 2 */
+
+    section + section{
+        border-bottom: solid .5vh #68d388;
+    }
+    section + section > h1{
+        font-size: 24pt;
+        margin: 5vh 10vw 1vh 10vw;
+        text-align: left;
+        width: 85%;
+    }
+    section + section img{
+        margin-bottom: 1vh;
+    }
+    section + section > div:nth-child(2){
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    section + section > div:nth-child(n+1) > div{
+        justify-content: space-between;
+        margin: 2vh 0;
+    }
+    section + section > div:nth-child(2) > div{
+        width: 90%;
+    }
+    section + section > div > div ul{
+        margin: 0;
+        width: 50%;
+    }
+    section + section > div > div li{
+        margin: 1vh 0;
+    }
+    section + section > div > div:nth-child(3) > div:first-child h1{
+        font-size: 16pt;
+        text-align: center;
+        width: 100%;
+    }
+    section + section > div > div > div:first-child{
+        width: 38%;
+    }
+
+    /* FOOTER */
+
+    footer{
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    footer > div:first-child{
+        margin: 0 5vw;
+    }
+    footer p{
+        margin: 2vh 5vw;
+    }
+}
+@media(min-width: 1024px){
+    header{
+        display: flex;
+        flex-direction: row;
+    }
+    header > div:first-child{
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        width: 81%;
+    }
+    header > div:first-child > div:first-child{
+        width: 100%;
+    }
+    header > div:first-child > div:first-child > img{
+        margin: 5vh 5vw 0;
+    }
+    header > div:first-child > div:nth-child(2){
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        margin: 10vh 5vw;
+        width: 80%;
+    }
+    header > div:first-child > div:nth-child(2) > p{
+        text-align: left;
+        margin: 1vh 5vw;
+    }
+    header > div:first-child > div:nth-child(2) > hr{
+        margin: 1vh 0;
+        width: 100%;
+    }
+    header > div:nth-child(2) > img{
+        margin: 0;
+        width: 90%;
+    }
+    header > div:first-child > div:nth-child(2) > p:nth-child(2n + 1){
+        margin: 0;
+    }
+    header > div:first-child > div:nth-child(2) > p:last-child{
+        text-align: justify;
     }
 }
