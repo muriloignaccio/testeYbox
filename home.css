@@ -657,7 +657,11 @@ footer span{
     }
 }
 @media(min-width: 1024px){
+
+    /* HEADER */
+
     header{
+        border-bottom: solid 1.5vh #e9831e;
         display: flex;
         flex-direction: row;
     }
@@ -665,7 +669,7 @@ footer span{
         align-items: flex-start;
         display: flex;
         flex-direction: column;
-        width: 81%;
+        width: 50%;
     }
     header > div:first-child > div:first-child{
         width: 100%;
@@ -678,7 +682,7 @@ footer span{
         display: flex;
         flex-direction: column;
         margin: 10vh 5vw;
-        width: 80%;
+        width: 77%;
     }
     header > div:first-child > div:nth-child(2) > p{
         text-align: left;
@@ -687,15 +691,189 @@ footer span{
     header > div:first-child > div:nth-child(2) > hr{
         margin: 1vh 0;
         width: 100%;
+    }header > div:nth-child(2){
+        width: 46%;
     }
     header > div:nth-child(2) > img{
         margin: 0;
-        width: 90%;
+        width: 85%;
     }
     header > div:first-child > div:nth-child(2) > p:nth-child(2n + 1){
         margin: 0;
     }
     header > div:first-child > div:nth-child(2) > p:last-child{
         text-align: justify;
+    }
+    
+    /* MAIN */
+
+    main{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main > div:first-child{
+        display: flex;
+        flex-direction: row;
+    }
+    main > div:first-child > div:first-child{
+        align-items: flex-start;
+        width: 56%;
+    }
+    main > div:first-child > div:first-child > div:nth-child(2n+2){
+        margin: 4vh 0 4vh 5vw;
+    }
+    main > div:first-child > div:first-child > div:nth-child(2n+2) > div:nth-child(2){
+        margin-left: 5vw    ;
+    }
+    main > div:first-child > div:first-child > h1{
+        font-size: 26pt;
+        margin: 5vh 5vw;
+        text-align: left;
+        font-weight: 800;
+    }
+    main > div:first-child > div:first-child > hr{
+        width: 50%;
+    }
+    main > div:first-child > div:first-child > div > div:nth-child(2) > h1{
+        font-size: 15pt;
+        font-weight: 800;
+    }
+    main > div:first-child > div:first-child > div > div:nth-child(2) > p{
+        font-weight: 500;
+    }
+    main > div:first-child > div:nth-child(2){
+        background-color: white;
+        margin-top: -15vh;
+        width: 35vw;
+    }
+    main > div:first-child > div:nth-child(2) > div:first-child > h1{
+        font-size: 15pt;
+        margin: 4vh 5vw 2vh 5vw;
+    }
+    main > div:first-child > div:nth-child(2) > div:first-child > h2{
+        margin: 0 2vw;
+    }
+    main > div:first-child > div:nth-child(2) > div:first-child > p{
+        margin: 5vh 5vw 2vh 5vw;
+    }
+    main > div:first-child > div:nth-child(2) > form > div:nth-child(2) > label > span{
+        height: 6vh;
+    }
+    main > div:first-child > div:nth-child(2) > form > div:nth-child(3){
+        width: 100%;
+    }
+    main > div:first-child > div:nth-child(2) > form > div:nth-child(3) > input{
+        height: 6vh;
+        padding-left: 2vw;
+        width: 70%;
+    }
+    main > div:first-child > div:nth-child(2) > form > div:nth-child(3) > select{
+        height: 6vh;
+        padding-left: 2vw;
+        width: 75%;
+    }
+    main > div:first-child > div:nth-child(2) > form > div:nth-child(3) > button{
+        height: 6vh;
+        margin-bottom: 4vh;
+        width: 75%;
+    }
+    main > div:nth-child(2){
+        width: 100vw;
+    }
+    main > div:nth-child(2) > h1{
+        margin: 10vh 21vw 0;
+        font-weight: 800;
+    }
+    main > div:nth-child(2) > h2{
+        margin: 3vh 25vw;
+    }
+    main > div:nth-child(n+3){
+        margin-bottom: 5vh;
+        width: 35vw;
+    }
+    main > div:nth-child(n+3) > div:first-child{
+        margin: 5vh 0;
+        width: 24vw;
+    }
+    main > div:nth-child(n+3) > div:last-child{
+        margin: 0;
+        width: 24vw;
+        height: 22vh;
+    }
+    main > div:nth-child(3) > div:first-child > h1{
+        margin-top: -2vh;
+        width: 18vw;
+    }
+    main > div:nth-child(4) > div:first-child > h1{
+        margin-top: -2vh;
+        width: 20vw;
+    }
+    main > div:nth-child(n+3) > div:first-child > p:nth-child(3n+2){
+        width: 50%;
+    }
+    main > div:nth-child(n+3) > div:first-child > p:nth-child(3n+3){
+        width: 70%;
+    }
+
+    /* SECTION 1 */
+
+    section{
+        border-bottom: solid 1.5vh #e7007d;
+    }
+    section > div:first-child > h1{
+        font-size: 26pt;
+        font-weight: 800;
+        margin: 10vh 20vw;
+    }
+    section > div:nth-child(2){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 5vh;
+    }
+    section > div:nth-child(2) > div > div:nth-child(2){
+        margin-left: 2vw;
+        width: 30vw;
+    }
+    section > div:nth-child(2) > div > div:nth-child(2) > h1{
+        font-size: 15pt;
+    }
+    section > div:nth-child(2) > div > div:nth-child(2) > p{
+        width: 22vw;
+    }
+
+    /* SECTION 2 */
+
+    section + section{
+        border-bottom: solid 1.5vh #57ea80;
+    }
+    section + section > h1{
+        font-size: 28pt;
+        font-weight: 800;
+        margin-bottom: 4vh;
+    }
+    section + section > div:nth-child(2) > div{
+        margin: 4vh 0;
+    }
+    section + section > div:nth-child(2) > div > div:first-child{
+        width: 30%;
+    }
+    section + section > div:nth-child(2) > div > ul{
+        width: 70%;
+    }
+    section + section > div:nth-child(2) > div > ul > li{
+        margin: 1vh 0;
+        font-weight: 500;
+    }
+
+    /* FOOTER */
+
+    footer > div:nth-child(2) > p:first-child{
+        margin-top: 5vh;
+    }
+    footer > div:nth-child(2) > p:last-child{
+        margin-bottom: 5vh;
     }
 }
